@@ -1,0 +1,166 @@
+.learning-section {
+  padding: 100px 0;
+  background-color: var(--card-bg);
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.learning-content .badge {
+  margin-bottom: 20px;
+}
+
+.text-left {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.learning-features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.learning-feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.learning-feature h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.learning-feature p {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 1.05rem;
+}
+
+/* Code Editor Mockup */
+.learning-visual {
+  position: relative;
+}
+
+.code-editor-mockup {
+  background: #1e1e2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.editor-header {
+  background: #282a36;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.mac-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.mac-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.mac-dots .red { background-color: #ff5f56; }
+.mac-dots .yellow { background-color: #ffbd2e; }
+.mac-dots .green { background-color: #27c93f; }
+
+.file-name {
+  color: #a1a1aa;
+  font-size: 0.85rem;
+  font-family: monospace;
+  margin-left: 20px;
+}
+
+.editor-body {
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.editor-body pre {
+  margin: 0;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.editor-body code {
+  color: #f8f8f2;
+}
+
+.editor-body .keyword { color: #ff79c6; }
+.editor-body .function { color: #50fa7b; }
+.editor-body .variable { color: #ffb86c; }
+.editor-body .string { color: #f1fa8c; }
+.editor-body .number { color: #bd93f9; }
+.editor-body .comment { color: #6272a4; font-style: italic; }
+.editor-body .method { color: #8be9fd; }
+
+.floating-card {
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  background: white;
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.floating-card h5 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.floating-card span {
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 992px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .learning-visual {
+    margin-top: 20px;
+  }
+  .floating-card {
+    left: 20px;
+    bottom: -20px;
+  }
+}
